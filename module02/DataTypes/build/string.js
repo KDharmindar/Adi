@@ -6,3 +6,8 @@ let thirdValue = "Hello world through type inference";
 let customerName = "Alfred";
 let message = `Welcome to our website Mr. ${customerName}`;
 console.log(message);
+let objString = new String("Hello world with Capital S");
+let secondObjString = new String(" more data");
+let l = objString.length;
+let concatValue = objString.concat(secondObjString.toString());
+console.log(concatValue);
