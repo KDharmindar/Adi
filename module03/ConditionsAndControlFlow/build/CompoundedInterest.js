@@ -12,6 +12,7 @@ let currentMonthProfit; // Profit amount for current month
 let currentDetails = ''; //Variable for string representation in console
 let currentMonthProfitString = ''; //Variable for string representation in console
 let futureValueString = '';
+let a;
 //Set values for initial 
 periodInYears = 10;
 investmentAmount = 1000000;
