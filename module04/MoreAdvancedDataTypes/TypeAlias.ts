@@ -1,4 +1,5 @@
-type StringType = string;
+type integer = number;
+type Food = string;
 
-let anyvalue:StringType; 
-anyvalue = 'Hello world';
+let firstInteger:integer;
+let lunch:Food;
