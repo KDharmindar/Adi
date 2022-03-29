@@ -1,25 +1,34 @@
-let isAlive:boolean = true;
-if (isAlive) {
-//do something
-} else if(isAlive) {
-//do 
-} else if(isAlive) {
+let percentage:number;
+let studentGrade:string;
+let message:string;
 
+percentage = 87;
+
+if(percentage > 70 && percentage < 80) {
+    studentGrade = "B";
+} else if(percentage > 80 && percentage < 90) {
+    studentGrade = "A";
+} else if(percentage > 90) {    
+    studentGrade = "A+";
 } else {
-
+    studentGrade = "F";
 }
 
-let userName:string = "Alfred"
-switch (userName) {
-    case "Alfred":
-        console.log("Name is Alfred");
+
+switch(studentGrade) {
+    case "A+":
+        message = "A+ Grade";
         break;
-    case "Christoper":
-        console.log("Name is Christopher");
-        break;
-    case "Julie":
-        console.log("Name is Julie");
+    case "A":
+        message = "A Grade";
+        break;    
+    case "B":
+        message = "B Grade";
+        break;    
+    case "F":
+        message = "Failed";
         break;
     default:
-        break;
+        message = "Result unknown";
+        break;    
 }

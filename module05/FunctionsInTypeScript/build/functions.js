@@ -17,11 +17,6 @@ function ExecuteFunction(func) {
     console.log(c);
 }
 ExecuteFunction(addAnonymous);
-//Definition of the function 
-let addArrow = (firstValue, secondValue) => {
-    return firstValue + secondValue;
-};
-let c = addArrow(3, 4);
+console.log(addAnonymous(5, 6));
 //Calling function
 let sum = add(2, 4);
-let sumAnonymous = addAnonymous(3, 4);

@@ -2,6 +2,7 @@
 
 let numberCollection:number[] = [];
 
+
 numberCollection[0] = 1;
 numberCollection[1] = 2;
 numberCollection[2] = 3;

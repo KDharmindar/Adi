@@ -1,4 +1,3 @@
-//Enumeration for Study Standard
 enum StudyStandard {
     First = 1,
     Second,
@@ -10,9 +9,8 @@ enum StudyStandard {
     Eight
 }
 
-//Necessary variables
-let studentName:string; // Student Name
-let studyStandard:StudyStandard; // Student Study Standard
+let studentName: string; //Name of the Student
+let studyStandard: StudyStandard; // Standard of the Student
 
 //Marks of the Subjects
 let marksInEnglish:number;
@@ -23,25 +21,26 @@ let marksInHistory:number;
 let totalMarksInAllSubject:number;
 let resultMessage:string;
 
-studentName = "Alfred";//Set student Name
-studyStandard = StudyStandard.Eight; //Set student study standard
+studentName = 'Alfred'; // Set student name
+studyStandard = StudyStandard.Eight;
 
-
-//Assign marks to subject variables
-marksInArts = 90;
-marksInEnglish = 87;
-marksInHistory = 78;
+//Assign marks to all the subjects
+marksInEnglish = 90;
+marksInScience = 86;
 marksInMathematics = 88;
-marksInScience = 91;
+marksInArts = 92;
+marksInHistory = 85;
 
 //Total marks
-totalMarksInAllSubject = marksInArts 
-    + marksInEnglish 
-    + marksInHistory 
+totalMarksInAllSubject = 
+    marksInEnglish 
+    + marksInScience 
     + marksInMathematics 
-    + marksInScience;
+    + marksInArts 
+    + marksInHistory;
 
-//Formated string message
-resultMessage = `${studentName} of Standard ${studyStandard} scored ${totalMarksInAllSubject} out of 500.`;
+//Formated result message
+resultMessage = `${studentName} of standard ${studyStandard} scored ${totalMarksInAllSubject} out of 500`;
+
 //Output on console
 console.log(resultMessage);
